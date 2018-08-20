@@ -21,6 +21,10 @@ test {
     }
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 wrapper {
     gradleVersion = '4.9'
 }
